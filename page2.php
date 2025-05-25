@@ -21,12 +21,17 @@ if (($file = fopen('Video.csv', 'r')) !== false) {
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Video Listesi</title>
+    <title>Bilgi Arşivi</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Merhaba <?= $_SESSION['user'] ?>, Video Listesi</h2>
-    <a href="page3.php"><button>Yeni Video Ekle</button></a>
+    <h1 class="main-title">Bilgi Arşivi</h1>
+
+<div class="top-bar">
+    <p class="welcome-text">Merhaba <?= $_SESSION['user'] ?></p>
+    <a href="page3.php"><button class="add-video-btn">+ Yeni Video Ekle</button></a>
+</div>
+
     <div class="video-container">
         <?php foreach ($videos as $video): 
             $id = $video[0];

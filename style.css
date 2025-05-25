@@ -1,0 +1,189 @@
+/* Genel stil ayarları */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    background: linear-gradient(to bottom right, #e3f2fd, #ffffff);
+    color: #333;
+    min-height: 100vh;
+}
+
+/* Başlık */
+h2 {
+    text-align: center;
+    color: #a10d88;
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+/* Giriş formu ve video formu */
+form {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #90caf9;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    width: 100%;
+    background-color: #a10d88;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #a10d88;
+}
+
+/* Video listeleme alanı */
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px;
+}
+
+.video-card {
+    background-color: white;
+    width: 250px;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.video-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.video-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.video-card p {
+    font-size: 0.95rem;
+    margin: 10px 0;
+    height: 45px;
+    overflow: hidden;
+}
+
+.video-card a {
+    text-decoration: none;
+}
+
+.video-card button {
+    background-color: #a10d88;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.video-card button:hover {
+    background-color: #a10d88;
+}
+
+.video-card .delete-btn {
+    background-color: #e53935;
+}
+
+.video-card .delete-btn:hover {
+    background-color: #b71c1c;
+}
+
+/* Hata mesajı */
+.error {
+    text-align: center;
+    color: red;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .video-card {
+        width: 90%;
+    }
+
+    form {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+/* Başlık */
+.main-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #a10d55;
+    margin-top: 30px;
+}
+
+/* Üst çubuk: sol yazı + sağ buton */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    margin: 20px 0 10px 0;
+}
+
+/* Sol köşedeki yazı */
+.welcome-text {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+}
+
+/* Yeni Video Ekle butonu */
+.add-video-btn {
+    background-color: #a10d88;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-video-btn:hover {
+    background-color: #a10d88;
+    transform: scale(1.05);
+}

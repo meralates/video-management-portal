@@ -1,4 +1,3 @@
-<!-- page1.php -->
 <?php
 session_start();
 
@@ -37,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
     <div class="login-container">
-        <h2>Video Portalı - Giriş Yap</h2>
+        <h2>Bilgi Arşivi - Giriş Yap</h2>
         <form method="POST">
             <input type="text" name="username" placeholder="Kullanıcı Adı" required>
             <input type="password" name="password" placeholder="Şifre" required>

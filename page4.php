@@ -21,7 +21,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if ($parts[0] === $_POST['id']) {
                 $parts[1] = $_POST['link'];
                 $parts[2] = $_POST['desc'];
-                // date_added ve is_deleted alanları değişmeyecek
                 $line = implode('|', $parts) . "\n";
             }
             $newLines[] = $line;
